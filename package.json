@@ -1,0 +1,19 @@
+{
+  "name": "beerful_api",
+  "version": "1.0.0",
+  "description": "A RESTful API built for beer",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gsarpy/beers_restful_api.git"
+  },
+  "author": "Gregory Sarpy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gsarpy/beers_restful_api/issues"
+  },
+  "homepage": "https://github.com/gsarpy/beers_restful_api#readme"
+}
