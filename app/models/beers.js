@@ -4,12 +4,11 @@ let Schema     = mongoose.Schema;
 mongoose.connect('mongodb://localhost/beer_api');
 
 // Setup DB Model
-let BeerSchema = new Schema;
 
-let BearSchema = new Schema({
+let BeerSchema = new Schema({
   name: String,
   brewery: String,
   type: String
 });
 
-module.exports = mongoose.model('Beer', BearSchema);
+module.exports = mongoose.model('Beer', BeerSchema);
