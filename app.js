@@ -11,9 +11,6 @@ let Beer     = require('./app/models/beers');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// set port 8080 for the app
-let port = process.env.PORT || 8080;
-
 // App Routes
 // ==========
 let router = express.Router();
@@ -110,7 +107,10 @@ router.route('/beers/:beer_id')
 app.use('/api', router);
 
 
+// set port 8080 for the app
+let PORT = process.env.PORT || 8080;
+
 // Start the Server
 // ================
-app.listen(port);
+app.listen(PORT);
 console.log('Server running on port: ' + port);
