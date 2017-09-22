@@ -5,7 +5,7 @@
 let express     = require('express');
 let app         = express(); // define app using express
 let bodyParser  = require('body-parser');
-let Beer     = require('./app/models/beers');
+let Beer     = require('./app/models/Beers');
 
 // configure app to use bodyParser()
 app.use(bodyParser.urlencoded({ extended: true }));
