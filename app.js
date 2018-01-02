@@ -5,14 +5,11 @@
 let express     = require('express');
 let app         = express(); // define app using express
 let bodyParser  = require('body-parser');
-let Beer     = require('./app/models/beers');
+let Beer     = require('./app/models/Beers');
 
 // configure app to use bodyParser()
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
-// set port 8080 for the app
-let port = process.env.PORT || 8080;
 
 // App Routes
 // ==========
@@ -110,7 +107,10 @@ router.route('/beers/:beer_id')
 app.use('/api', router);
 
 
+// set port 8080 for the app
+let PORT = process.env.PORT || 8080;
+
 // Start the Server
 // ================
-app.listen(port);
+app.listen(PORT);
 console.log('Server running on port: ' + port);
